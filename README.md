@@ -20,9 +20,9 @@ This was an easy project that helped me to improve my skills on Flexbox, in like
 
 > **Note:** these are the sizes (these are the most important sizes, but there are more sizes according to Apple, thus if you want more information [check this out](https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/app-icon/):
 
-> **Note:** something important to consider is that we must use PNG files when trying to use the **apple-touch-icon** element.
-
 ![](readme/ati-sizes.png)
+
+> **Note:** something important to consider is that we must use PNG files when trying to use the **apple-touch-icon** element.
 
 > **Note:** there's an interesting [page](https://iconifier.net/) that helps us to create different **apple-touch-icon** widgets sizes in order to be more efficient (it also gives us the HTML code with the **sizes** attribute to help Safari understand which icon should take).
 
