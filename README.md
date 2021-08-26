@@ -1,7 +1,7 @@
 # [flexbox-menus](https://flexbox-menus-dhao11.netlify.app/)
 This is the fourth project from Juan Pablo's course of [CSS Grid and Flexbox](https://www.udemy.com/course/css-grid-y-flexbox-la-guia-definitiva-crea-10-proyectos/).
 
-This was an easy project that helped me to improve my skills on Flexbox, in like manner this might give me a hand when building other projects because I'll have already done common navigation components, therefore I'll know how to build them faster, or otherwise ... I'll be able to reuse the ones that are here.
+This was an easy project that helped me to improve my skills on Flexbox, in like manner this might give me a hand when building other projects because I'll have already done common navigation components, therefore I'll know how to build them faster, or otherwise... I'll be able to reuse the ones that are here.
 
 > **Disclaimer:** I'm starting to learn how to use **Git/Github** correctly, therefore there'll be plenty of pull requests, commits and other stuff as tests in this repository, however, *this won't represent my way of working forever*, I'll learn more things along the way as always :D!.
 
