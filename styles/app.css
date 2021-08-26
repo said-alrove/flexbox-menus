@@ -1,0 +1,251 @@
+/* === GLOBALS === */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    /* fallback for old browsers */
+    background: #FF9966; 
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #FF5E62, #FF9966); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #FF5E62, #FF9966);
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 16px;
+}
+
+*, 
+*::before, 
+*::after { box-sizing: inherit; }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li:hover { background-color: #1A2770; }
+
+a {
+    inline-size: 100%;
+    font-size: 2.2rem;
+    text-decoration: none;
+    color: white;
+}
+
+/* === HELPERS === */
+.u-bg-nav { background-color: #3F51B5; }
+
+/* === GENERAL === */
+.container {
+    margin: 2em auto;
+    max-inline-size: 120rem;
+    min-block-size: calc( 100vh - 2rem );
+    padding-block: 2em 14em;
+    padding-inline: 3em;
+    background-color: white;
+}
+
+@media (min-width: 1212px) {
+    .nav { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }    
+}
+
+.nav__heading {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+.nav-easy,
+.nav-icons,
+.nav-dropdown,
+.nav-social,
+.nav-social-dropdown {
+    border-radius: .5em;
+    overflow: hidden;
+}
+
+/* === EASY MENU === */
+.nav-easy__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-easy__item {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-easy__item a { padding-block: .75em; }
+
+@media (min-width: 792px) {
+    .nav-easy__list { flex-flow: row wrap; }
+    
+    .nav-easy__item { flex-basis: calc(100% / 3); }
+}
+
+@media (min-width: 1212px) {
+    .nav-easy__list { flex-wrap: nowrap; }
+
+    .nav-easy__item { 
+        flex-grow: 1;
+        flex-basis: 0; 
+    }
+}
+
+/* === ICONS MENU === */
+.nav-icons__item a {
+    display: flex;
+    align-items: center;
+    gap: .25em;
+    padding-block: .75em;
+}
+
+.nav-icons__widget { 
+    flex-basis: 25%; 
+    text-align: center;
+}
+
+.nav-icons__text span {
+    display: block;
+    font-size: 1.4rem;
+}
+
+@media (min-width: 616px) {
+    .nav-icons__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav-icons__item { flex-basis: 50%; }
+
+    .nav-icons__item a { justify-content: center; }
+}
+
+@media (min-width: 992px) {
+    .nav-icons__item {
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+}
+
+/* === DROPDOWN MENU === */
+.nav-dropdown {
+    display: flex;
+    align-items: center;
+}
+
+.nav-dropdown__list { 
+    flex: 1; 
+    /* If I don't set the block-size to 100% there's a kind of "padding" between the navigation and the list that otherwise it's not possible to remove it  */
+    block-size: 100%;
+}
+
+.nav-dropdown__list,
+.nav-dropdown__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-dropdown__item { 
+    position: relative;
+    flex-grow: 1; 
+}
+
+.nav-dropdown__sublist {
+    position: absolute;
+    inset-block-start: 100%;
+    inset-inline-start: 0;
+    display: none;
+    inline-size: 100%;
+    background-color: #FF5E62;
+}
+
+.nav-dropdown__item a,
+.nav-dropdown__subitem a {
+    padding-block: .75em; 
+    text-align: center; 
+}
+
+@media (min-width: 992px) {
+    .nav-dropdown__list { flex-direction: row; }
+
+    .nav-dropdown__item { flex: 1 1 100%; }
+
+    .nav-dropdown__item:hover .nav-dropdown__sublist {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* === SOCIAL MENU === */
+.nav-social__list { display: flex; }
+
+.nav-social__item { 
+    flex: 1 1 0;
+    text-align: center; 
+}
+
+.nav-social__item a::before {
+    display: inline-block;
+    inline-size: 100%;
+    padding-block: .75em;
+    font-family: 'Font Awesome 5 Brands';
+}
+
+.nav-social__item a[href*='facebook.com']::before {
+    content: '\f39e';
+}
+
+.nav-social__item a[href*='twitter.com']::before {
+    content: '\f099';
+}
+
+.nav-social__item a[href*='youtube.com']::before {
+    content: '\f167';
+}
+
+.nav-social__item a[href*='instagram.com']::before {
+    content: '\f16d';
+}
+
+.nav-social__item a[href*='pinterest.com']::before {
+    content: '\f0d2';
+}
+
+.nav-social__item:nth-child(4),
+.nav-social__item:nth-child(5) { display: none; }
+
+@media (min-width: 552px) {
+    .nav-social__item:nth-child(4),
+    .nav-social__item:nth-child(5) { display: initial; }
+}
+
+.nav-social__item span { display: none; }
+
+/* === DROPDOWN SOCIAL === */
+.nav-social-dropdown {
+    display: flex;
+    flex-direction: column;
+    /* When flex-direction is set to row, due to the fact that this container will have a justify-content of space-between it'll generate a litle space without background between the navigations, therefore it's mandatory declare the background once again here as it'd be another navigation */
+    background-color: #3F51B5;
+}
+
+.nav-social-dropdown .nav-dropdown,
+.nav-social-dropdown .nav-social { border-radius: 0; }
+
+@media (min-width: 1212px) {
+    .nav-social-dropdown { flex-direction: row; }
+
+    .nav-social-dropdown .nav-dropdown { flex-basis: 70%; }
+
+    .nav-social-dropdown .nav-social { flex-basis: 30%; }
+}
