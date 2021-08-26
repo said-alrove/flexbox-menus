@@ -48,7 +48,7 @@ This was an easy project that helped me to improve my skills on Flexbox, in like
 
 > That'd be everything for this project :D.
 
-> **P.D.** I started to think about the idea of pointing Github pages to the main branch and instead of trying to test things there (and have troubles with Netlify because of it), test stuff locally in my computer with live server, for my, right now, sounds better.
+> **P.D.** I started to think about the idea of pointing Github pages to the main branch and instead of trying to test things there (and have troubles with Netlify because of it), test stuff locally in my computer with live server. For me, right now, sounds better.
 
 ## Open Graph
 
