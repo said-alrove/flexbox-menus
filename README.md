@@ -46,6 +46,16 @@ This was an easy project that helped me to improve my skills on Flexbox, in like
 
 > **Note:** obviously (I think) most of the web projects have a cloud where all the files from the main branch in the Github repisitory are hosted (I guess that's **production**), but I'd like to solve this problem with Github and Netlify only, therefore I'll continue looking for more information.
 
+> **Note:** articles read while doing this project: 
+
+- [ARIA: alert role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Alert_Role)
+- [ARIA: article role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Article_Role)
+- [ARIA: banner role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Banner_role)
+- [How to Become a Writer: A Guide](https://www.grammarly.com/blog/how-to-be-a-writer/)
+- [Use Apple touch icon](https://webhint.io/docs/user-guide/hints/hint-apple-touch-icons/)
+- [¿Qué es apple-touch-icon.png?](https://megazona.com/programacion/html5/que-es-apple-touch-icon-png)
+- [HTML attribute: rel](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel)
+
 > That'd be everything for this project :D.
 
 > **P.D.** I started to think about the idea of pointing Github pages to the main branch and instead of trying to test things there (and have troubles with Netlify because of it), test stuff locally in my computer with live server. For me, right now, sounds better.
