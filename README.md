@@ -18,7 +18,7 @@ This was an easy project that helped me to improve my skills on Flexbox, in like
 ## What I learned
 * I didn't have too much opportunity for learning plenty of things, but as always, I tried to add something new to the project. In this case, I figured out that I can (and as something recommended by Apple, I must) add different **apple-touch-icon** widgets with various sizes (sizes that are mandatory, otherwise, if the sizes aren't the ones accepted by Apple.. Safari will ignore it) in order to optimize the resolution of the image according to the situation where's needed (notification icon, home screen icon, etc.).
 
-> **Note:** these are the sizes (these are the most important sizes, but there are more sizes according to Apple, thus if you want more information [check this out](https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/app-icon/):
+> **Note:** these are the sizes (these are the most important sizes, but there are more sizes according to Apple, thus if you want more information [check this out](https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/app-icon/)):
 
 ![](readme/ati-sizes.png)
 
